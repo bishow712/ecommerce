@@ -430,9 +430,6 @@ nav {
     padding: 0 0 20px 20px;
 }
 
-.products__header::after {
-    content: "Products";
-}
 
 .viweallprojects__btn a {
     display: flex;
@@ -448,4 +445,26 @@ nav {
 
 .viweallprojects__btn a:hover span {
     transform: translateX(10px);
+}
+
+.products__header {
+    position: relative; /* Ensure proper positioning */
+}
+
+.products__header .products__header-1 {
+    position: relative; /* Ensure proper positioning */
+    z-index: 1; /* Set a higher z-index to appear above the pseudo-element */
+}
+
+.products__header .products__header-1::after {
+    content: "Products";
+    position: absolute;
+    /* top: 10%; */
+    left: calc(100vw/1.85);
+    transform: translate(-60%, -50%);
+    font-size: 8rem;
+    font-weight: 600;
+    color: var(--white);
+    opacity: 0.1;
+    z-index: -2;
 }

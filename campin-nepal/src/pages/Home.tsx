@@ -24,7 +24,7 @@ const Home = () => {
             </p>
             <div className="about__btn">
               <a href="/">
-                Explore Destinations
+                Know more about us
                 <span><i className="ri-arrow-right-line"></i></span>
               </a>
             </div>

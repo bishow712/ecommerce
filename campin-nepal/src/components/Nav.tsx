@@ -11,7 +11,6 @@ const Nav = () => {
             <li><a href="#about">About</a></li>
             <li><a href="#blog">Blogs</a></li>
             <li><a href="#equipment">Products</a></li>
-            <li><a href="#equipment">Destinations</a></li>
           </ul>
           <div className="nav__menu__btn" id="menu-btn">
             <i className="ri-menu-line"></i>
